@@ -1,0 +1,89 @@
+.navbar {
+  align-items: center;
+  height: 8vh;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 1030;
+
+}
+
+.navbar-lewagon {
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  background-color: #fffff80;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+//  text-decoration: none;
+//  color: white;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 3vw;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+}
+
+.login {
+    right: 35px;
+    position: absolute;
+    top: 15px;
+}
+
+.unread{
+  border-radius: 50%;
+  border-width: 1px;
+  background-color: $red-orange;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  color: white ;
+}
+
+.unread:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.login-img {
+    right: 1.8vw;
+    position: absolute;
+    top: 1vh;
+}
+
+.login-dd {
+    right: 1vw;
+    position: absolute;
+    top: 8vh;
+}
+
+.dropdown-menu {
+  border-radius: 20px;
+  border-color: $red-orange;
+  border-width: 2px;
+  background-color: $pink;
+  color: $red-orange;
+}
+
+.hover:hover {
+  color: $red-orange;
+}
+
+a:active {
+  color: $red-orange;
+}

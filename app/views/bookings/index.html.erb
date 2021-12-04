@@ -1,0 +1,13 @@
+<%= render 'shared/header' %>
+<div class= "container">
+  <div class="messages-container">
+    <div class="message-overview">
+      <%= render '/messages/bookings', bookings: @bookings %>
+    </div>
+    <div class="chat">
+      <div class="messages">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bottom"></div>

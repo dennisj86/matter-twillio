@@ -1,0 +1,83 @@
+.show-card{
+  padding-top: 25vh;
+  display: flex;
+  //justify-content: space-between;
+  align-content: flex-start;
+}
+
+.market-buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  width: 250px;
+  padding-top: 24px;
+
+}
+ .large-image {
+  img {
+  height: 400px;
+  width: 600px;
+  object-fit: cover;
+  }
+ }
+
+ .short-info {
+  padding-bottom: 8px;
+  color: $red-orange;
+ }
+
+ .short-info-top{
+  margin-top: 22px;
+ }
+
+ .all-infos {
+   padding-left: 34px;
+   width: 450px;
+   padding-top: 0px;
+ }
+ .all-infos h2 {
+   padding: 0px !important;
+   text-align: left !important;
+ }
+
+
+ .save-icon{
+   a{
+     color: rgba(234, 127, 116, 0.5);
+     font-size: 24px;
+     padding-left: 150px;
+     padding-right: 0px;
+    }
+ }
+
+.modal-body{
+  background-color: rgba(203, 214, 233, 0.7);
+  height: 150px;
+}
+
+.modal-header{
+  background-color: rgba(203, 214, 233, 0.7);
+  border-top-left-radius: 15px;
+}
+
+.modal-footer{
+  background-color: rgba(203, 214, 233, 0.7);
+}
+
+.modal-dialog{
+  padding-top: 150px;
+}
+
+#message-text{
+  height: 120px;
+}
+
+#like{
+  display: flex;
+  justify-content: space-between;
+}
+
+#message_info{
+  color: #00000070;
+}

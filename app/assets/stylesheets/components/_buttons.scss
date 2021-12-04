@@ -1,0 +1,59 @@
+.btn-solid-red {
+  padding: 8px 24px;
+  border-radius: 20px;
+  font-weight: bold;
+  background-color: $red-orange;
+  color: white;
+}
+
+.btn-solid-red:hover{
+  color: white;
+  text-decoration: none;
+}
+
+.btn-line-red {
+  color: $red-orange;
+  text-align: center;
+  padding: 4px 20px;
+  border-radius: 18px;
+  //font-weight: bold;
+  // background-color: #fffff80;
+  //   backdrop-filter: blur(8px);
+  // -webkit-backdrop-filter: blur(8px);
+  border-color: $red-orange;
+  border-style: solid;
+  border-width: 0.65px;
+}
+
+.btn-line-red:hover {
+  text-decoration: none;
+  color: $red-orange;
+}
+
+.btn-solid-red-handshake{
+  //background: url('');
+  padding: 8px 24px;
+  border-radius: 20px;
+  font-weight: bold;
+  background-color: $red-orange;
+  color: white;
+}
+
+.btn-solid-red-handshake:hover{
+  color: white;
+  text-decoration: none;
+}
+
+.btn-solid-red-message{
+  padding: 8px 24px;
+  border-radius: 20px;
+  font-weight: bold;
+  background-color: $red-orange;
+  color: white;
+  border-width: 0px;
+}
+
+.btn-solid-red-message:hover{
+  color: white;
+  text-decoration: none;
+}

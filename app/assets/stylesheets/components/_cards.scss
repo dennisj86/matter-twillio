@@ -1,0 +1,104 @@
+.card-trip {
+  width: 220px;
+  padding: 8px;
+  height: 87%;
+  display: block;
+  background-color: $pink;
+  margin: 6px;
+  margin-bottom: 35px;
+}
+
+.card-trip {
+  img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  }
+}
+
+.card-trip h3 {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0px;
+  color: $red-orange;
+}
+
+// .card-trip p {
+//   overflow: hidden;
+//   font-size: 0.8rem;
+//   opacity: .7;
+//   margin: 0;
+//   padding-top: 5px;
+//   padding-bottom: 16px;
+//   white-space: nowrap;
+//   width: 100%;
+//   overflow: hidden;              /* "overflow"-Wert darf nicht "visible" sein */
+//   text-overflow: ellipsis;
+// }
+
+.card-trip-infos {
+  padding-left: 5px;
+  padding-right: 5px;
+
+}
+
+.card-trip .card-trip-infos {
+  position: relative;
+}
+
+.card-trip-infos .card-trip-user {
+  position: absolute;
+  right: 8px;
+  top: -192px;
+  width: 20px;
+  color: $pink;
+  font-size: 20px;
+}
+
+.card-title{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 40px;
+  padding-top: 12px;
+}
+
+.title-link {
+  a{
+  color: $red-orange;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0px;
+  }
+}
+
+.four-cards {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  height: 400px;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
+.index-cards {
+  display: flex;
+  align-content: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-grow: 2;
+  padding-top: 50px;
+  height: 87%;
+}
+
+.card-btn{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #ffffff00;
+}

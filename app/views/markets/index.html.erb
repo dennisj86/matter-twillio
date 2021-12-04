@@ -1,0 +1,57 @@
+<div class="container">
+
+  <h1 class="text-center">Overview</h1>
+
+  <div class="index-top">
+    <div class="search-form">
+        <div class="search-input"><%= form_tag markets_path, method: :get do %>
+          <%= text_field_tag :query,
+          params[:query],
+          class: "form-control",
+          placeholder: "What are you looking for?"%></div>
+          <div><%= submit_tag "Search", class: "btn-line-red" %></div>
+        <% end %>
+    </div>
+    <div class="filter">
+        <div class="filter-dd"><%= form_tag markets_path, method: :get do %>
+          <%= select_tag :category, options_for_select(['Choose category', 'Animals','Music','Plants', 'Handywork', 'Concerts', 'Transportation', 'Crafts', 'Sports', 'Education', 'Circus', 'Film & Photography', 'Baking & Cooking']) %></div>
+        <div><%= submit_tag "Filter", class: "btn-line-red" %></div>
+      <% end %>
+    </div>
+  </div>
+  </div>
+
+
+  <div class="img-right">
+  <div class="container">
+  <div class="index-cards">
+    <% @markets.each do |market| %>
+
+    <div class="card-trip">
+    <%= link_to market_path(market) do %>
+      <% if market.photo.attached? %>
+        <%= cl_image_tag "#{market.photo.key}" %>
+        <% else %>
+        <%= image_tag "#{market.image}" %>
+      <% end %>
+    <% end  %>
+      <div class="card-trip-infos">
+        <div class="card-title">
+          <div class="title-link"><%= link_to market.title, market_path(market) %></div>
+          <%# <h3>60</h3> %>
+        </div>
+            <div>
+              <i class="fas fa-heart card-trip-user"></i>
+              <%# <p><%= market.description %></p>
+            </div>
+            <div class="center-btn"><%= button_to "See Details", market_path(market), :class => "btn-line-red card-btn", :method => :get %></div>
+            <br>
+          </div>
+
+
+        </div>
+    <% end  %>
+  </div>
+  </div>
+  </div>
+</div>
